@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mohamed Shihan | Portfolio</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: #333;
+    background: #f9f9f9;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  header h1 {
+    margin-bottom: 5px;
+  }
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  section {
+    margin-bottom: 50px;
+  }
+  h2 {
+    border-bottom: 3px solid #007acc;
+    padding-bottom: 8px;
+    margin-bottom: 25px;
+  }
+  /* Projects */
+  .project-card {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  .project-card img {
+    width: 280px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .project-info {
+    flex: 1;
+  }
+  .project-info h3 {
+    margin-top: 0;
+    color: #007acc;
+  }
+  .project-info p {
+    margin: 8px 0;
+    line-height: 1.4;
+  }
+  /* Responsive */
+  @media (max-width: 720px) {
+    .project-card {
+      flex-direction: column;
+      align-items: center;
+    }
+    .project-card img {
+      width: 100%;
+      height: auto;
+    }
+    .project-info {
+      text-align: center;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Mohamed Shihan</h1>
+    <p>Front End & Full Stack Developer</p>
+    <p>
+      📧 <a href="mailto:shihanagni@gmail.com">shihanagni@gmail.com</a> | 📞 +64 27 443 0536<br />
+      🔗 <a href="https://linkedin.com/in/mshihan" target="_blank">LinkedIn</a> | 💻 <a href="https://shmshihan.github.io" target="_blank">shmshihan</a>
+    </p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Experienced Full Stack Web Developer & Cybersecurity Specialist with 9+ years of
+expertise in Laravel, Yii2, CodeIgniter, PHP, JavaScript (React/Vue), and
+MySQL/PostgreSQL. Strong background in API development, payment gateway
+integration (iPay88, eWAY, WhatsApp API), DevOps (AWS, Nginx, Ubuntu, CentOS),
+and building scalable web applications. Holds an MSc in Cyber Security from Wrexham
+University, demonstrating expertise in secure software development and data protection
+strategies.
+    </p>
+  </section>
+  
+  <section id="projects">
+  <h2>Projects</h2>
+
+  <div class="projects-grid">
+    <div class="project-card">
+      <img src="img/bpcApp.png" alt="Dulux Connect App" />
+      <div class="project-info">
+        <div class="work-type">Client Project (Malaysia)</div>
+        <h3>Dulux Connect App</h3>
+        <p>The Dulux Painter's Club app is designed for professional painters to streamline their participation in Dulux's trade promotions and loyalty programs. By scanning product barcodes or manually entering unique identification (UID) codes from select Dulux products, users can earn points and increase their chances of receiving rewards. This process eliminates the need for third-party intermediaries, offering a direct and efficient way to engage with Dulux's promotional offerings.</p>
+        <div class="tech-tags">
+          <span>React Native</span>
+          <span>Laravel</span>
+          <span>MySQL</span>
+		  <span>Bitbucket</span>
+		  <span>Android, IOS, Huawei</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="img/promo-portal.png" alt="Promo Portal" />
+      <div class="project-info">
+        <div class="work-type">Client Project (Malaysia)</div>
+        <h3>Promo Portal</h3>
+        <p>Promo Portal is a React-based web application used by marketing teams to manage and send personalized WhatsApp messages to users. I built the frontend with React and the backend with Laravel, and integrated the WhatsApp Business API for automated messaging. One complex task was managing dynamic message templates where users could insert variables like names or codes into predefined templates. I also set up Cloudflare Workers to handle incoming webhooks in real-time, enabling two-way communication. The system helped the client reduce manual outreach by 80% and increased campaign response rates significantly.</p>
+        <div class="tech-tags">
+          <span>React</span>
+          <span>Laravel</span>
+		  <span>MySQL</span>		  
+          <span>WhatsApp API</span>
+		  <span>Mailgun API</span>
+          <span>Cloudflare Workers</span>
+		  <span>Bitbucket</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="img/vicswim.png" alt="Online Booking System" />
+      <div class="project-info">
+        <div class="work-type">Client Project (Australia)</div>
+        <h3>Online Booking System</h3>
+        <p>I developed an online booking platform using Laravel and Vue for a client in Australia. It supported scheduling, payments, and automated notifications. Vue was used for the real-time booking interface, while Laravel managed the backend logic and API. I ensured timezone handling, email reminders, and slot locking to prevent double bookings. This system helped the client move from Google Sheets to a fully automated workflow and significantly improved their booking conversion rate.</p>
+        <div class="tech-tags">
+          <span>Laravel</span>
+          <span>Vue.js</span>
+		  <span>MySQL</span>
+          <span>Stripe</span>
+		  <span>Cloudflare Workers</span>
+          <span>Email Automation</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="img/journal.png" alt="Journal Management System" />
+      <div class="project-info">
+        <div class="work-type">Client Project (Malaysia)</div>
+        <h3>Journal Management System</h3>
+        <p>This project was a journal publishing platform for academic papers. I developed the Laravel-based backend and integrated PayPal for managing submission payments and subscriptions. The main complexity was handling multiple user roles—authors, reviewers, and editors—each with different workflows. I also created automated email flows for submission status updates. The system helped the publisher move from a manual, email-based process to a streamlined digital platform, reducing admin workload by more than half.</p>
+        <div class="tech-tags">
+          <span>Laravel</span>
+          <span>HTML</span>
+		  <span>CSS</span>
+		  <span>jQuery</span>
+		  <span>MySQL</span>
+          <span>PayPal</span>
+		  <span>iThenticate API</span>
+          <span>Email Automation (Mailgun API)</span>
+        </div>
+      </div>
+    </div>
+	
+	
+	<div class="project-card">
+      <img src="img/courier.png" alt="Courier Management System" />
+      <div class="project-info">
+        <div class="work-type">Client Project (Yemen)</div>
+        <h3>Courier Management System</h3>
+        <p>This project was a journal publishing platform for academic papers. I developed the Laravel-based backend and integrated PayPal for managing submission payments and subscriptions. The main complexity was handling multiple user roles—authors, reviewers, and editors—each with different workflows. I also created automated email flows for submission status updates. The system helped the publisher move from a manual, email-based process to a streamlined digital platform, reducing admin workload by more than half.</p>
+        <div class="tech-tags">
+          <span>Laravel</span>
+          <span>HTML</span>
+		  <span>CSS</span>
+		  <span>jQuery</span>
+		  <span>MySQL</span>
+		  <span>DTEX API</span>
+          <span>Message Automation (Whatsapp API)</span>
+        </div>
+      </div>
+    </div>
+	
+	<div class="project-card">
+      <img src="img/michelin.png" alt="Loyalty Porta" />
+      <div class="project-info">
+        <div class="work-type">Client Project (Malaysia)</div>
+        <h3>Loyalty Portal</h3>
+        <p>Developed the backend for a customer and dealer loyalty management platform using Yii2. The system supports reward tracking, user tier levels, redemption workflows, and secure login via mobile/email. Admins can launch promotions, manage user data, and view point history. I architected and implemented RESTful APIs for front-end consumption, including secure endpoints for authentication, point allocation, and redemption. Integrated role-based access, audit logging, and multilingual support for scalability across regions.</p>
+        <div class="tech-tags">
+          <span>Yii2</span> <span>MySQL</span> <span>RESTful API</span> <span>JWT Auth</span> <span>RBAC</span> <span>WhatsApp OTP</span>
+        </div>
+      </div>
+    </div>
+	
+	<div class="project-card">
+      <img src="img/ici.png" alt="Painter Redemption Portal" />
+      <div class="project-info">
+        <div class="work-type">Client Project (Malaysia)</div>
+        <h3>Painter Redemption Portal</h3>
+        <p>Backend system developed in Yii2 to manage loyalty points earned by painters through coupon scans or purchases. These points can be redeemed directly for cash payouts to bank accounts. The platform supports tiered user levels, real-time transaction processing, and rigorous security through audit logging and RBAC (Role-Based Access Control).</p>
+        <div class="tech-tags">
+          <span>Yii2</span>
+      <span>MySQL</span>
+      <span>RESTful API</span>
+      <span>RBAC</span>
+      <span>Payout Integration</span>
+        </div>
+      </div>
+    </div>
+	
+	<div class="project-card">
+      <img src="img/daleem.png" alt="Daleelcom News Platform" />
+      <div class="project-info">
+        <div class="work-type">Client Project (Yemen)</div>
+        <h3>Daleelcom News Platform</h3>
+        <p>Arabic-language news site with dynamic category-based routing (e.g. local, technology, culture, etc.). I implemented the backend in CodeIgniter 3 using an MVC structure, modular controllers for categories, media handling for articles, and editorial workflows for featured and urgent news.</p>
+        <div class="tech-tags">
+           <span>CodeIgniter 3</span>
+      <span>PHP</span>
+      <span>MySQL</span>
+      <span>MVC</span>
+      <span>Category Routing</span>
+        </div>
+      </div>
+    </div>
+	
+	<div class="project-card">
+      <img src="img/iresidenz.png" alt="Daleelcom News Platform" />
+      <div class="project-info">
+        <div class="work-type">Client Project (Malaysia)</div>
+        <h3>iResidenz Property Management Portal</h3>
+        <p>
+      Backend system in Yii2 enabling secure resident login, profile management, and document access (e.g. Terms & Conditions). Includes password resets, audit logging, and support contact workflows.
+    </p>
+        <div class="tech-tags">
+       <span>Yii2</span>
+      <span>MySQL</span>
+      <span>PHP</span>
+<span>PayPal</span>
+      <span>Email Automation (Mailgun API)</span>
+        </div>
+      </div>
+    </div>
+	
+	<div class="project-card">
+      <img src="img/payout.png" alt="DPC Barcode Scanner Backend" />
+      <div class="project-info">
+        <div class="work-type">Client Project (Malaysia)</div>
+        <h3>DPC Barcode Scanner Backend</h3>
+        <p>
+      Backend in Laravel for the Dulux Painter’s Club barcode scanning system. Includes secure user login, REST APIs for scan intake, role-based access, and audit logging for validation tracking.
+    </p>
+        <div class="tech-tags">
+       <span>Laravel</span>
+      <span>MySQL</span>
+      <span>RESTful API</span>
+      <span>HTML</span>
+      <span>Audit Logging</span>
+        </div>
+      </div>
+    </div>
+	
+	<div class="project-card">
+      <img src="img/rewards.png" alt="Loyalty Redemption Portal" />
+      <div class="project-info">
+        <div class="work-type">Client Project (Malaysia)</div>
+        <h3>Loyalty Redemption Portal (Points-based)</h3>
+        <p>
+      Yii2 backend for a loyalty platform enabling customers to redeem earned points for rewards and vouchers. Includes product-linked redemption, wallet tracking, user eligibility logic, and multilingual email confirmations.
+    </p>
+        <div class="tech-tags">
+       <span>Yii2</span>
+      <span>RESTful API</span>
+      <span>Wallet System</span>
+      <span>Rewards Engine</span>
+      <span>MySQL</span>
+        </div>
+      </div>
+    </div>
+	
+	<div class="project-card">
+      <img src="img/ray.png" alt="Loyalty Redemption Portal" />
+      <div class="project-info">
+        <div class="work-type">Client Project (Malaysia)</div>
+        <h3>Rewards & You Admin Dashboard (PHP Backend)</h3>
+        <p>
+      Developed the secure backend infrastructure and login system for the Rewards & You admin portal. Includes session handling, RBAC, request validation, and audit logging to support campaign and user management.
+    </p>
+        <div class="tech-tags">
+       <span>PHP</span>
+      <span>MySQL</span>
+      <span>HTML</span>
+      <span>jQuery & CSS</span>
+      <span>Payment gateway API</span>
+        </div>
+      </div>
+    </div>
+	
+
+  </div>
+</section>
+
+<style>
+  #projects {
+    max-width: 900px;
+    margin: 0 auto 60px auto;
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .project-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  .project-card:hover {
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  }
+  .project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .project-info {
+    padding: 15px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .work-type {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 6px;
+    font-style: italic;
+  }
+  .project-info h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #007acc;
+    font-size: 1.2rem;
+  }
+  .project-info p {
+    flex-grow: 1;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    color: #333;
+    font-size: 0.95rem;
+  }
+  .tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .tech-tags span {
+    background-color: #007acc;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 13px;
+    user-select: none;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 720px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+
+  
+
+  <section id="skills">
+  <h2>Skills & Technologies</h2>
+  <ul class="skills-list">
+    <li>🖥️ <strong>Backend:</strong> PHP (Laravel, Yii2, CodeIgniter), Node.js</li>
+    <li>🎨 <strong>Frontend:</strong> JavaScript (Vue.js, React.js, jQuery), HTML5, CSS3, Tailwind CSS</li>
+    <li>🗄️ <strong>Database:</strong> MySQL, PostgreSQL, MongoDB</li>
+    <li>🔒 <strong>Cybersecurity:</strong> Secure coding, Penetration testing, OWASP Top 10</li>
+    <li>⚙️ <strong>DevOps:</strong> Nginx, Apache, Docker, AWS, DigitalOcean</li>
+    <li>🔗 <strong>API Development:</strong> RESTful APIs, GraphQL, WhatsApp Business API</li>
+    <li>💳 <strong>Payment Integration:</strong> iPay88, eWAY, Stripe, PayPal</li>
+    <li>📂 <strong>Version Control:</strong> Git, GitHub, GitLab, Bitbucket</li>
+    <li>📱 <strong>Mobile App Publishing:</strong> Huawei AppGallery, Google Play Store, Apple App Store</li>
+    <li>🖌️ <strong>Design Tools:</strong> Adobe Photoshop, Adobe Illustrator</li>
+  </ul>
+
+  <style>
+    .skills-list {
+      list-style: none;
+      padding-left: 0;
+      font-size: 16px;
+    }
+    .skills-list li {
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+  </style>
+</section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out via email or LinkedIn for collaboration or job opportunities.</p>
+    <p>
+      📧 <a href="mailto:shihanagni@gmail.com">shihanagni@gmail.com</a><br />
+      🔗 <a href="https://linkedin.com/in/mshihan" target="_blank">linkedin.com/in/mshihan</a><br />
+      💻 <a href="https://shmshihan.github.io" target="_blank">shmshihan</a>
+    </p>
+  </section>
+</body>
+</html>
